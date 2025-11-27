@@ -81,7 +81,7 @@ extension SwiftUI.Color {
     }
 }
 
-
+@available(iOS 17.0, *)
 extension SwiftUI.Color.Resolved {
     
     public var oklch: Oklch {
@@ -115,7 +115,7 @@ extension SwiftUI.Color {
 }
 
 
-
+@available(iOS 17.0, *)
 private struct P: View {
     @Environment(\.self) var env
     @State var color = Oklch(lightness: 0.2, chroma: 0.2, hue: .radians(0))
@@ -149,8 +149,7 @@ private struct P: View {
     }
 }
 
-
-
+@available(iOS 17.0, *)
 #Preview {
     ZStack {
         P()
